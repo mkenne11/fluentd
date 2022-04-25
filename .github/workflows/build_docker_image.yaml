@@ -34,4 +34,4 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: debian:${{ steps.vars.outputs.tag }}
+          tags: mkenne11/fluentd:debian-${{ steps.vars.outputs.tag }}
