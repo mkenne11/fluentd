@@ -1,5 +1,5 @@
 # Updated to version v0.0.12.
-FROM fluent/fluentd:v1.14-debian-arm64-1
+FROM fluent/fluentd:v1.14-debian-1
 
 # Use root account to use apt
 USER root
