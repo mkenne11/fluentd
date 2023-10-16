@@ -50,7 +50,7 @@ jobs:
       - name: Build and push container images
         uses: docker/build-push-action@v5
         with:
-          context: "{{defaultContext}}:src"
+          context: .
           platforms: linux/amd64,linux/arm64
           push: true
           tags: ${{ steps.meta.outputs.tags }}
