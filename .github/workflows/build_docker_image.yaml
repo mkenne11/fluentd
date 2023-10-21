@@ -56,7 +56,7 @@ jobs:
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           tags: |
-            type=raw
+            type=semver,pattern={{version}}
     
       - name: Build and push container images
         uses: docker/build-push-action@v5
