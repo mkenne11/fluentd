@@ -22,7 +22,7 @@ jobs:
       matrix:
         include:
           - imageos: alpine
-            dockerfile: "docker/alphine/Dockerfile"
+            dockerfile: "docker/alpine/Dockerfile"
             platforms: linux/amd64
           - imageos: debian
             dockerfile: "docker/debian/Dockerfile"
